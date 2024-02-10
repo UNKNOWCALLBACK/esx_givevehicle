@@ -1,3 +1,6 @@
+# **WHAT IS UPDATE**
+This esx_givevehicle is not Requirements esx_vehicleshop 
+
 # **Depiction:**
 This plugin you can give vehicle with custom or random plate number into player's garage with command  
 also you can delete a vehicle by plate  
@@ -38,7 +41,7 @@ Config.AuthorizedRanks = {
   
 # **Requirements:**
 * es_extended
-* esx_vehicleshop 
 
-FiveM Forum Release:https://forum.cfx.re/t/release-esx-give-or-delete-car-to-owned-vehicle-database-plate-can-custom-or-random-spawn/1050821
+
+
 
