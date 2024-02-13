@@ -5,7 +5,7 @@ Config.ReceiveMsg = true
 Config.nc_garage = true
 Config.nc_inventory = true
 Config.azael_ui = false
-
+Config.debugtoconsole = true
 
 Config.AuthorizedRanks = {
   'superadmin',
