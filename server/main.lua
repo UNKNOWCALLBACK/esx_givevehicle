@@ -202,7 +202,7 @@ function havePermission(_source)
 	return isAdmin
 end
 
-ESX.RegisterServerCallback('4KINGGOPLUS_GIVEVEHICLE:isPlateTaken', function(source, cb, plate)
+ESX.RegisterServerCallback('esx_givevehicle:isPlateTaken', function(source, cb, plate)
 	MySQL.Async.fetchAll('SELECT 1 FROM owned_vehicles WHERE plate = @plate', {
 		['@plate'] = plate
 	}, function(result)
