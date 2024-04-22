@@ -140,7 +140,7 @@ function GeneratePlate()
 			generatedPlate = string.upper(GetRandomLetter(Config.PlateLetters) .. GetRandomNumber(Config.PlateNumbers))
 		end
 
-		ESX.TriggerServerCallback('4KINGGOPLUS_GIVEVEHICLE:isPlateTaken', function (isPlateTaken)
+		ESX.TriggerServerCallback('esx_givevehicle:isPlateTaken':isPlateTaken', function (isPlateTaken)
 			if not isPlateTaken then
 				doBreak = true
 			end
