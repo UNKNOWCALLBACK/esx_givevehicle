@@ -1,5 +1,4 @@
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 --give car with a random plate- 1: playerID 2: carModel (3: plate)
 RegisterCommand('givecar', function(source, args)
