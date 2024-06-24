@@ -64,8 +64,6 @@ function _givevehicle(_source, _args, vehicleType)
 			end
 			plate = string.upper(plate)
 			TriggerClientEvent('esx_giveownedcar:spawnVehiclePlate', sourceID, _args[1], _args[2], plate, playerName, 'console', vehicleType)
-			
-			-- TriggerEvent('azael_ui-itemnotify:sendInventoryItem', 'add', item.name, "1", self.source)
 		else
 			local playerName = GetPlayerName(_args[1])
 			TriggerClientEvent('esx_giveownedcar:spawnVehicle', sourceID, _args[1], _args[2], playerName, 'console', vehicleType)
@@ -146,7 +144,7 @@ local playername = xPlayer.getName()
 				local type = json.encode(vehicleProps)
 				local plate = vehicleProps.plate
 			if Config.debugtoconsole then
-					Config.debugtext()
+					Config.debugtext(playername,_source,type,plate)
 				end
 		if Config.nc_garage then
 			local plate = vehicleProps.plate
