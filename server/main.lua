@@ -146,7 +146,7 @@ local playername = xPlayer.getName()
 				local type = json.encode(vehicleProps)
 				local plate = vehicleProps.plate
 			if Config.debugtoconsole then
-					print('[ESX_GIVEVEHICLE] : PLAYER' ..playername.. 'ID' .._source.. 'RECEIVE' ..type.. 'PLATE' ..plate )
+					Config.debugtext()
 				end
 		if Config.nc_garage then
 			local plate = vehicleProps.plate
