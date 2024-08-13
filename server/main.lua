@@ -196,7 +196,7 @@ function havePermission(_source)
 	
 	if IsPlayerAceAllowed(_source, "giveownedcar.command") then isAdmin = true end
 	
-	return isAdmin
+	return isAdmins
 end
 
 ESX.RegisterServerCallback('esx_givevehicle:isPlateTaken', function(source, cb, plate)
